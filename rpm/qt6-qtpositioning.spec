@@ -87,7 +87,8 @@ done
 popd
 
 
-%ldconfig_scriptlets
+%post -p /sbin/ldconfig
+%postun -p /sbin/ldconfig
 
 %files
 %license LICENSES/GPL* LICENSES/LGPL*
